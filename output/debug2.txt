@@ -1,0 +1,248 @@
+Input Regex is:
+.*.c3.fa4b17U.zb36.v37c4.*a3b1
+Build Monoid Automata:
+Current symbol: 1
+Current symbol: b
+is label
+Current symbol: 3
+New Label:
+Label: b
+Number: 1
+Automata:
+first:
+0 ,
+finals:
+0 ,
+Current symbol: a
+is label
+Current symbol: *
+New Label:
+Label: a
+Number: 3
+Automata:
+first:
+1 ,
+finals:
+1 ,
+New index: 2 ; Prev index: 1 ; Prev prev index: 0
+STAR
+Automata:
+first:
+1,
+
+finals:
+1,
+
+nullable: 1
+state // follow // label // number
+1 // 1,  // a // 3
+
+Current symbol: .
+New index: 1 ; Prev index: 2 ; Prev prev index: 0
+CONCAT
+source // dest
+0 // Automata:
+first:
+1,
+0,
+
+finals:
+0,
+
+nullable: 0
+state // follow // label // number
+1 // 1, 0,  // a // 3
+0 //  // b // 1
+
+Current symbol: 4
+Current symbol: c
+is label
+Current symbol: 7
+New Label:
+Label: c
+Number: 4
+Automata:
+first:
+2 ,
+finals:
+2 ,
+Current symbol: 3
+Current symbol: v
+is label
+Current symbol: .
+New Label:
+Label: v
+Number: 37
+Automata:
+first:
+3 ,
+finals:
+3 ,
+New index: 3 ; Prev index: 2 ; Prev prev index: 0
+CONCAT
+source // dest
+2 // Automata:
+first:
+3,
+
+finals:
+2,
+
+nullable: 0
+state // follow // label // number
+3 // 2,  // v // 37
+
+Current symbol: 6
+Current symbol: 3
+Current symbol: b
+is label
+Current symbol: z
+is label
+Current symbol: .
+New Label:
+Label: zb
+Number: 36
+Automata:
+first:
+4 ,
+finals:
+4 ,
+New index: 2 ; Prev index: 0 ; Prev prev index: 3
+CONCAT
+source // dest
+3 // 2,
+Automata:
+first:
+4,
+
+finals:
+2,
+
+nullable: 0
+state // follow // label // number
+4 // 3,  // zb // 36
+
+Current symbol: U
+New index: 3 ; Prev index: 2 ; Prev prev index: 1
+UNION
+Automata:
+first:
+4,
+1,
+0,
+
+finals:
+2,
+0,
+
+nullable: 0
+state // follow // label // number
+4 // 3,  // zb // 36
+1 // 1, 0,  // a // 3
+0 //  // b // 1
+
+Current symbol: 7
+Current symbol: 1
+Current symbol: b
+is label
+Current symbol: 4
+New Label:
+Label: b
+Number: 17
+Automata:
+first:
+5 ,
+finals:
+5 ,
+Current symbol: a
+is label
+Current symbol: f
+is label
+Current symbol: .
+New Label:
+Label: fa
+Number: 4
+Automata:
+first:
+6 ,
+finals:
+6 ,
+New index: 0 ; Prev index: 2 ; Prev prev index: 1
+CONCAT
+source // dest
+5 // Automata:
+first:
+6,
+
+finals:
+5,
+
+nullable: 0
+state // follow // label // number
+6 // 5,  // fa // 4
+
+Current symbol: 3
+Current symbol: c
+is label
+Current symbol: .
+New Label:
+Label: c
+Number: 3
+Automata:
+first:
+7 ,
+finals:
+7 ,
+New index: 2 ; Prev index: 1 ; Prev prev index: 0
+CONCAT
+source // dest
+6 // 5,
+Automata:
+first:
+7,
+
+finals:
+5,
+
+nullable: 0
+state // follow // label // number
+7 // 6,  // c // 3
+
+Current symbol: *
+New index: 0 ; Prev index: 2 ; Prev prev index: 3
+STAR
+Automata:
+first:
+7,
+
+finals:
+5,
+
+nullable: 1
+state // follow // label // number
+7 // 6,  // c // 3
+
+Current symbol: .
+New index: 2 ; Prev index: 0 ; Prev prev index: 3
+CONCAT
+source // dest
+4 // 3,
+1 // 1,
+0,
+0 // Automata:
+first:
+7,
+4,
+1,
+0,
+
+finals:
+2,
+0,
+
+nullable: 0
+state // follow // label // number
+7 // 6,  // c // 3
+4 // 3,  // zb // 36
+1 // 1, 0,  // a // 3
+0 //  // b // 1
