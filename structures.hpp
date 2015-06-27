@@ -41,12 +41,11 @@ vector<bool> finals_check;
 
 
 struct Automata{
-	int* first_finals[2];
-	//int* finals;
-	bool nullable;
+    int* first_finals[2];
+    bool nullable;
 
-	int first_size;
-	int finals_size;
+    int first_size;
+    int finals_size;
 };
 
 
